@@ -23,7 +23,7 @@ int main()
         accumulator += payload;
 
         send(client, &accumulator, 4, 0);
-        cout << "sent to client: " << accumulator << '\n'
+        std::cout << "sent to client: " << accumulator << '\n'
         close(client);
     }
 
