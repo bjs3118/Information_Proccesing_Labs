@@ -8,7 +8,7 @@ int main()
 {
     int s = socket(AF_INET, SOCK_DGRAM, 0);
 
-    uint32_t addr = 0x7B628D03;
+    uint32_t addr = 0x41528503;
     sockaddr_in saddr = {AF_INET, htons(4000), {addr}};
 
     while(1)
