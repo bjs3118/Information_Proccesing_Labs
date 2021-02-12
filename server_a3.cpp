@@ -24,7 +24,7 @@ int main()
 
         send(client, &accumulator, 4, 0);
 
-        close(client)
+        close(client);
     }
 
 }
