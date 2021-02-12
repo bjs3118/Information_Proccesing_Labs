@@ -23,6 +23,7 @@ int main()
         state += val;
 
         sendto(s, &state, sizeof(state), 0, (const sockaddr*)&raddr, raddr_len);
+         std::cout << "sent to client: " << accumulator << '\n';
 
     }
 
