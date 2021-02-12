@@ -15,7 +15,7 @@ int main()
 
     while(1)
     {
-        sock_addr_in raddr;
+        sockaddr_in raddr;
         socklen_t raddr_len=sizeof(raddr)
         uint32_t val;
         recvfrom(s, &val, sizeof(val), 0, (sockaddr*)&raddr, &raddr_len);
@@ -23,7 +23,7 @@ int main()
         state += val;
 
         sendto(s, &state, sizeof(state), 0, (const sockaddr*)&raddr, raddr_len);
-        
+
     }
 
 
