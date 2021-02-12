@@ -12,7 +12,7 @@ int main(int argc, char const *argv[])
     int opt = 1; 
     int addrlen = sizeof(address); 
     char buffer[1024] = {0}; 
-           
+    int hello = 69;
     // Creating socket file descriptor 
     if ((server_fd = socket(AF_INET, SOCK_STREAM, 0)) == 0) 
     { 
@@ -36,7 +36,7 @@ int main(int argc, char const *argv[])
     } 
     if (listen(server_fd, 3) < 0) 
     { 
-        std::cerr("listen"); 
+        std::cerr << ("listen") << '\n'; 
     } 
     if ((new_socket = accept(server_fd, (struct sockaddr *)&address,  
                        (socklen_t*)&addrlen))<0) 
