@@ -7,7 +7,7 @@
 
 int main(int argc, char *argv[])
 {
-    sockaddr_in saddr = {AF_INET, htons(4000), {4000a8c0}};
+    sockaddr_in saddr = {AF_INET, htons(4000), {0x4000a8c0}};
 
     while(1)
     {
