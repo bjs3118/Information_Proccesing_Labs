@@ -16,7 +16,7 @@ int main()
     while(1)
     {
         sockaddr_in raddr;
-        socklen_t raddr_len=sizeof(raddr)
+        socklen_t raddr_len=sizeof(raddr);
         uint32_t val;
         recvfrom(s, &val, sizeof(val), 0, (sockaddr*)&raddr, &raddr_len);
 
